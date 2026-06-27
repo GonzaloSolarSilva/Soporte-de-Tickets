@@ -1,0 +1,14 @@
+# Ignorar carpetas de compilación y binarios de Java
+**/build/
+**/bin/
+**/dist/
+*.class
+*.jar
+*.war
+
+# Ignorar configuraciones privadas del IDE NetBeans
+**/nbproject/private/
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
