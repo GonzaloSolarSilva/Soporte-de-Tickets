@@ -1,10 +1,10 @@
-# 🎫 Sistema de Soporte de Tickets — TechSupport S.A.C.
+#  Sistema de Soporte de Tickets — TechSupport S.A.C.
 
 Un sistema integral, ligero y de alto rendimiento para la gestión, priorización y atención de incidencias técnicas. Desarrollado en **Java** y complementado con un **Dashboard Web interactivo**, este proyecto implementa estructuras de datos personalizadas para simular un entorno de atención al cliente real.
 
 ---
 
-## 🚀 Características Principales
+##  Características Principales
 
 *   **Doble Interfaz:**
     *   **Consola Interactiva (Java):** Panel administrativo de control total para registrar, priorizar, atender y deshacer acciones en tiempo real.
@@ -15,26 +15,26 @@ Un sistema integral, ligero y de alto rendimiento para la gestión, priorizació
 
 ---
 
-## 🛠️ Estructuras de Datos Utilizadas
+##  Estructuras de Datos Utilizadas
 
 Para garantizar un rendimiento óptimo de almacenamiento y recuperación, el núcleo del proyecto utiliza implementaciones propias de estructuras de datos lineales y no lineales en lugar de las librerías por defecto de Java:
 
-### 1. 📊 Cola con Prioridad (`ColaConPrioridad`)
+### 1.  Cola con Prioridad (`ColaConPrioridad`)
 *   **Propósito:** Almacena los tickets pendientes de atención.
 *   **Funcionamiento:** Los tickets se organizan según su nivel de urgencia (`1 = Alta`, `2 = Media`, `3 = Baja`). Al atender (`dequeue`), el sistema despacha primero los tickets con prioridad 1, luego los de prioridad 2 y finalmente los de prioridad 3, manteniendo el orden FIFO (First In, First Out) entre elementos del mismo nivel.
 
-### 2. 🥞 Pilas (`Pila<T>`)
+### 2.  Pilas (`Pila<T>`)
 Se implementan dos flujos basados en el principio LIFO (Last In, First Out):
 *   **Pila de Historial:** Registra cronológicamente cada acción (registro, atención, etc.). Sirve como base para la funcionalidad de **Deshacer (Undo)** la última operación realizada.
 *   **Pila en Proceso:** Administra el conjunto de tickets asignados que actualmente están siendo revisados o trabajados por el equipo técnico.
 
-### 3. 🌲 Árbol Binario de Búsqueda (`ArbolBinarioBusqueda`)
+### 3.  Árbol Binario de Búsqueda (`ArbolBinarioBusqueda`)
 *   **Propósito:** Gestión y clasificación jerárquica de categorías de incidencias (Hardware, Software, Redes, Accesos, etc.).
 *   **Funcionamiento:** Permite búsquedas, inserciones y recorridos ordenados (in-order) en tiempo logarítmico $O(\log n)$, estructurando el catálogo de soporte eficientemente.
 
 ---
 
-## 💻 Tecnologías y Herramientas
+##  Tecnologías y Herramientas
 
 *   **Backend:** Java SE 8+ (Capa de lógica, estructuras de datos puras y microservidor de red).
 *   **Frontend:** HTML5, CSS3 (Diseño moderno responsivo) y JavaScript ES6 (Consumo de APIs asíncronas vía `fetch`).
@@ -42,7 +42,7 @@ Se implementan dos flujos basados en el principio LIFO (Last In, First Out):
 
 ---
 
-## ⚙️ Instrucciones de Ejecución
+##  Instrucciones de Ejecución
 
 ### 1. Ejecutar el Servidor Backend (Java)
 Abre la consola en el directorio del proyecto y compila/ejecuta la clase principal [SoporteTickets.java](file:///c:/Users/USUARIO/Downloads/Avance/SoporteTickets/SoporteTickets/src/principal/SoporteTickets.java):
